@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+html, body, #root {
+    height:100%;
+}
+
+.container-fluid {
+    height:100%;
+}
+
+.font_text {
+    font-family: 'Lato', sans-serif;
+    color: black;
+}
+
+.recipe_overlay {
+    padding: 0%;
+}
+
+.caption_recipes {
+    font-size: 80%;
+    width: 100%;
+    color: white;
+}
+
+.caption_recipe {
+    font-size: 25px;
+    width: 100%;
+    color: white;
+    margin-left: 1%;
+}
+
+.bg_caption_recipes {
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-top: 75%;
+    height: 25%;
+    background-color: hsla(0, 0%, 43%, 0.650);
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.bg_caption_steps {
+    padding-left: 1%;
+    padding-right: 1%;
+    background-color: hsla(0, 0%, 43%, 0.650);
+    position: absolute;
+    top: 0px;
+    margin-right: 5px;
+}
+
+.bg_caption_recipe {
+    padding-left: 1%;
+    padding-right: 1%;
+    height: 25%;
+    width: 70%;
+    background-color: hsla(0, 0%, 43%, 0.650);
+    position: absolute;
+    bottom: 0%;
+    margin-bottom: 0px;
+}
+
+.bg_recipe_info {
+    padding-left: 1%;
+    padding-right: 1%;
+    width: auto;
+    background-color: hsla(0, 0%, 43%, 0.650);
+}
+
+.insertion_style {
+    background-color: #f3a42d;
+    border-radius: 15px;
+}
+
+
+/* Recipes and ingredients slideshow */
+.carousel-indicators {
+    bottom: -45px; 
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color:#A9A9A9;
+}
+
+
+/* Grey background with titles */
+.lists {
+    background-color:  #e4e4e4a8; 
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: -15px;
+    padding: 15px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    min-height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.list_title {
+    text-decoration: underline;
+}
+
+
+/* Links */ 
+.btn-link {
+    color: black;
+}
+
+.nav-link {
+    color: red;
+}
+
+
+/* Ingredients circles */
+.image1 {
+    position: relative;
+    margin-left: -30px;
+    margin-bottom: -25px;
+}
+
+.image2 {
+    position: absolute;
+    top: 30px;
+    left: 35px;
+}
+
+.image3 {
+    position: relative;
+    margin-top: -13px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+
+/* Suggestions */
+.keyboardListGroup {
+    position: absolute;
+    z-index: 10;
+}
+
+
+/* Microphone Icon */
+.box {
+    position: relative;
+    left: -17px;
+    bottom: -19.1px;
+}
+
+.object {
+    display: flex;
+    flex: 0 1 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.outline {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	border: 8px solid #B5A4A4;
+    animation: pulse 3s;
+	animation-timing-function: ease-out;
+	animation-iteration-count: infinite;
+    position: absolute;
+}
+
+.button {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: #50CDDD;
+	box-shadow: 0px 0px 80px #0084F9;
+    position: absolute;
+}
+
+/* Pulsing microphone */
+@keyframes pulse {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+	border: 65px solid #0B3082;
+  }
+
+  50% {
+	border: solid #A3FFC2;		
+	opacity: 0.8;
+  }
+	
+  90% {
+    transform: scale(3.2);
+	opacity: 0.2;
+	border: 3px solid #2E3CFF;
+  }
+
+  100% {
+    transform: scale(3.3);
+	opacity: 0;
+	border: 1px solid #7A89FF;
+  }
+}
+
+#delayed {
+	animation-delay: 1.5s;
+}
+
+#circlein {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: #6BD6E1;
+	box-shadow: 0px -2px 15px #E0FF94;
+	position: absolute;
+}
+
+.rhap_main-controls {
+    align-items: unset !important;
+}
